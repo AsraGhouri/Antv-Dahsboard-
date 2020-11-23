@@ -1,0 +1,15 @@
+// Settings
+@import "./settings/global";
+@import "./settings/colors";
+@import "./settings/fonts";
+
+// Tools
+@import "./tools/mixins";
+
+// Generic
+@import "./generic/reset";
+@import "./generic/normalize";
+
+// common
+@import 'components/dashboard/';
+@import 'components/common/index.scss';

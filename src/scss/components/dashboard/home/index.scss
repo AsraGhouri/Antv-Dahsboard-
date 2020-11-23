@@ -1,0 +1,54 @@
+.map {
+  height: 604px;
+  width: 100%;
+  @include xs {
+    height: 300px;
+  }
+}
+.district-map {
+  height: 500px;
+  margin-top: 5rem !important;
+  @include xs {
+    height: 250px;
+  }
+}
+.ant-layout-content.content {
+  position: relative;
+  margin-right: 15px;
+  overflow-x: inherit !important;
+}
+.Home-layout,
+.navbar-drawer {
+  .ant-menu-item {
+    display: flex;
+    &::after {
+      border-right-color: rgba(129, 215, 109, 0.95);
+    }
+  }
+  .ant-menu-inline {
+    .ant-menu-item {
+      &::after {
+        border-right-color: rgba(129, 215, 109, 0.95);
+      }
+    }
+  }
+  .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+    background-color: rgba(129, 215, 109, 0.15);
+  }
+  .ant-menu-submenu-title {
+    color: map-get($theme-colors, heading);
+    font-weight: 600;
+    // font-size: 14px;
+    line-height: 22px;
+  }
+  .ant-menu-item-selected {
+    color: rgba(129, 215, 109, 0.95);
+    a {
+      color: rgba(129, 215, 109, 0.95);
+      &:hover,
+      &:focus {
+        color: rgba(129, 215, 109, 0.95);
+      }
+    }
+  }
+}

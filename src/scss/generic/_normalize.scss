@@ -1,0 +1,48 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Calibri-Regular;
+  background-color: map-get($theme-colors, white-color);
+}
+
+button {
+  font-family: Calibri-Regular;
+}
+
+.Toastify__toast--info {
+  background-color: #007aff !important;
+}
+
+.Toastify__toast--success {
+  background-color: #0f9d58 !important;
+}
+
+.Toastify__toast--warning {
+  background-color: #972c95 !important;
+}
+
+.Toastify__toast--error {
+  background-color: #ff2400 !important;
+}
+
+.MuiBadge-root > .MuiBadge-badge {
+  @include xs {
+    width: 14px;
+    min-width: 14px;
+    height: 14px;
+    font-size: 0.65em;
+  }
+}
+
+.full-width {
+  width: 100%;
+}
+
+.MuiTypography-root.MuiTypography-h6 {
+  font-family: Calibri-Regular, arial, sans-serif !important;
+  font-size: 1.5rem;
+}
+
+.cursor-link {
+  cursor: pointer;
+}

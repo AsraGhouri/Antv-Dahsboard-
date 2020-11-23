@@ -1,0 +1,42 @@
+#components-layout-demo-side .logo {
+  height: 32px;
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.3);
+}
+.mobile-nav-items {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+  place-items: center;
+  .ant-btn-primary.menu-button {
+    background: none;
+    border: none;
+  }
+}
+@include xl {
+  .ant-btn-primary.menu-button {
+    display: none;
+  }
+}
+@include lg {
+  .ant-btn-primary.menu-button {
+    display: none;
+  }
+}
+.site-layout .site-layout-background {
+  background: #fff;
+}
+.navbar-drawer{
+  .ant-drawer-body{
+    padding: 35px 0px;
+  }
+}
+.sidebar {
+  margin-right: 24px;
+}
+.navbar {
+  background-color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
